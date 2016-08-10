@@ -2,7 +2,8 @@ version: "2"
 
 services:
   bitlbee:
-    build: .
+    # build: .
+    image: thomasf/bitlbee:v1.0.0
     restart: on-failure
     volumes:
       - /srv/bitlbee/var:/var/lib/bitlbee
