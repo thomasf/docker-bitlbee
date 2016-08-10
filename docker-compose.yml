@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  bitlbee:
+    build: .
+    restart: on-failure
+    volumes:
+      - /srv/bitlbee/var:/var/lib/bitlbee
+    ports:
+      - "127.0.0.1:30001:6667"
